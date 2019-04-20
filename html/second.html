@@ -1,0 +1,153 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kymiho</title>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic|Playfair+Display:400,700&subset=latin,cyrillic">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="../css/css.css">
+  <link rel="stylesheet" type="text/css" href="../css/button.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  </head>
+<body>
+        <header>
+                <nav class="container">
+                  <a class="logo" >
+                    <span>3</span>
+                    <span>D's</span>
+                    <span>M</span>
+                    <span>A</span>
+                    <span>X</span>
+                    
+                  </a>
+                  <div class="nav-toggle"><span></span></div>
+         
+                  <ul id="menu">
+                    <li><a href="../index.html">Главная</a></li>
+                     <li class="drop-wrap"><a>Уроки</a></li>
+                    <ul class ="sub">
+                      <li><a href="vvod.html">Вводная часть</a></li>
+                      <li><a href="first.html">Урок 1</a></li>
+                      <li><a href="second.html">Урок 2</a></li>
+                      <li><a href="th.html">Урок 3</a></li>
+                      <li><a href="for.html">Урок 4</a></li>
+                       </ul>
+                  <li><a href="gal.html">Галерея</a></li>
+                  <li><a href="arh.html">Архив</a></li>
+                  <li><a href="svz.html">Связь</a></li>
+                  </ul>
+                </nav>
+              </header>
+    <div class="container">
+        <h2 class="post-title">Детализация пряников</h2>
+        <a class="menu_les">Уроки</a>  
+        <a class="menu_les" href="vvod.html"> 0 </a>
+          <a class="menu_les" href="first.html"> 1</a>
+          <a class="menu_les" href="second.html"> 2</a>
+          <a class="menu_les" href="th.html"> 3</a>
+          <a class="menu_les" href="for.html"> 4</a>
+        <div class="post-content">
+            <p>Для того чтобы пряники не бросались в глаза, их можно сделать временно прозрачными, для этого надо нажать <b>Alt + X</b>.  
+                Для полного удобства надо перейти в вид Top и режим Shaded.</p>
+                <img class="tip4" src="../img/second/2.png">
+            <p>Чтобы сделать платье нашего пряника, необходимо так же через Line нарисовать контур. </p>
+            <p>Если случайно снято выделение с лайна, то двойной клик по точке на лайне выделит ее заново. 
+                (Так как в 3D’s Max есть понятие слои, то один клик выделяет самый ближний к нам объект,
+                 двойной клик – чуть дальше и так далее).</p>
+            <p>В <b>Modify – modifier list – extrude</b> <b>Amount – 0.5</b>. Теперь надо поднять платье.</p>
+                        <p>Применяется модификатор Quadify Mesh (~0.4%). Далее так же применяется TurboSmooth.</p>
+            <p>Декор пряника мальчика.
+                    В create – line (Corner).</p>
+            <p>Ставятся галочки на обоих пунктах и выбирается объем по прямоугольнику (checkpoint на rectangle).</p>
+            <img class="tip" src="../img/second/3.png">
+             <p>Чем дальше ставятся точки, тем лучше будет выглядеть.</p>
+            <p>Для удобного редактирования надо нажать alt + X и в Modify – line – vertex. Теперь можно спокойно редактировать линию, 
+                если все устраивает - TurboSmooth (Iterations = 3).</p>
+            <p>Теперь надо так же поднять декор для этого в координате z = 3 мм.
+                    На платье девочки делается тоже самое.
+                    </p>
+            <p>Теперь надо сделать глаза – Cteate – Geometry – Sphere. Ее позиция по оси z= 3mm.</p>
+            <p>Используя Shift и инструмент Select&move – при перемещении используется тип Copy. Эти же сферы используются для глаз мальчика и его пуговок, а  так же крепления платья у девочки.
+                При необходимости можно изменить их размер.</p>
+            <p>Теперь будем делать рот наших пряников: в Create – Line (corner) с 3 точками.</p>
+            <img class="tip" src="../img/second/6.png">
+            <p>Сглаживание делается через TurboSmoth (Iterations = 3). </p>
+            <p>Создание бабочки пряника. </p>
+            <img class="tip2" src="../img/second/7.png">
+            <p>Готовую сферу надо скопировать в нужную точку и изменить ее размер, так как середина бабочки больше, чем глаза пряничков.</p>
+
+            <p>Так же надо сделать крылья бабочки для этого в <b>Create – Geometry – Box с размерами 2*2</b></p>
+            <img class="tip2" src="../img/second/9.png">
+
+            <p>После его создания, приподнимаем его на нужную нам высоту</p>
+            <img class="tip" src="../img/second/8.png">
+            <p>Теперь переходим в Modify – Modifer list – Taper. Выбираем ось X и в параметрах  Amount (сила сжатия) = 0,7.
+                 После этого в Box надо изменить высоту, чтобы он не был таким высоким и необходимо придать форму крыла бабочки. Далее TurboSmooth (Iterations ~2 ~3). 
+                 Затем выделяется объект и нажимается Mirror. </p>  
+                 <p>Создается вторая часть наше бабочки. </p>
+         <h4 class="post-title">Бабочка девочки</h4>
+         <img class="tip" src="../img/second/10.png">
+         <p>Нажимается Ctrl  и выделяются объекты бабочки мальчика и на панели интерфейса Group – group – ok. Происходит группировка объектов, затем она копируется на девочку, с помощью клавиши E на клавиатуре, поворачивается по оси z на 45 градусов.</p>
+         <p>Для того чтобы изогнуть ее  в Modify – Modifier list – Bend – помогает деформировать и изгибать объект по нужным осям. Ось Y - Angel = 80.</p>
+         <img class="tip2" src="../img/second/11.png">
+         <p>Нажимается "+" у Bend и выбирается Gizmo, затем с помощью инструмента Rotate (E) и поворачивается по оси Z ~ -45 градусов.</p>
+         <img class="tip4" src="../img/second/12.png">
+         <h4 class="post-title">Кружка</h4>
+         <img class="tip5" src="../img/second/14.png">
+         <p><b>Create – Shapes – Line (Corner)s</b> выключаются галочки в <b>Rendering – Enable in Renderer и Enable in Viewport</b> и рисуется контур нашей кружки и доходя до дна кружки нажимается <b>Shift</b> (для создания ровной линии) и ведется примерно до середины. </p>
+        <p>Далее переходим в <b>Modify – line – vertex</b> выделяем <b>vertex</b> на боковой границе и ставим тип Smooth подгоняя ее положение под референс. Теперь выделяем нижнюю точку и переходим в<b> Modify – Modifier list – Lathe</b>, включив этот модификатор проверяем все ли хорошо получилось. </p>
+        <p>Ставитсям галочка на <b>Weld Core</b> (сшивает точки в одну)</p>
+        <p>Поверх Lathe применяетс модификатор <b>Shell</b> и параметры подгоняются под референс. Теперь надо сгладить его – TorboSmooth с галочкой на <b>Smoothing groups</b> и Iterations = 3, для того чтобы нижняя часть была не острой применяется еще раз Turbosmooth Iterations = 1 без галочки  Smoothing groups.</p>
+        <h4 class="post-title">Конфета</h4>
+        <img class="tip" src="../img/second/16.png">
+        <img class="tip2" src="../img/second/18.png">
+        <p><b>Create – Geometry – Cylinder</b> и рисуется цилиндр с радиусом = 2,29 и высота 65 и поворачивается по оси X = -90, выделяется цилиндр и ставится  на место где он должен быть. </p>
+        <p>Теперь надо закрутить цилиндр  Modify – Modifier list – Twist Angel = 720, затем накладывается Bend и ставится угол поворота 180 по оси z  и Limits, после чего сглаживаем нашу конфету.</p>
+        <h2 class="post-title"><h2>Композиция сцены</h2>
+        <p>Нажимается W и выбирается референс и удаляется. Затем группируются каждый объект ( в итоге получаются группы: Пряник девочка и пряник мальчик), так же при необходимости можно открыть группу – Group – Open group. </p>
+        <p>Выделяются все объекты и поворачиваются по оси Х на 90 градусов.</p>
+        <img  src="../img/second/19.png">
+        <p>Нажимается F (Front) и размещаются на основной линии.</p>
+        <img  src="../img/second/20.png">
+        <p>И располагаются объекты (удобнее на виде Top). В итоге выходит: </p>
+        <img  src="../img/second/21.png">
+        <p>Теперь надо сделать подложку, на которой будет стоять композиция, и фон. Для этого ставится Plane  (1000*1000). Фон – Create -Box с количеством сегментов 1*1 и размерами 100*1500*1500. </p>
+    <p>Чтобы уравновесить композицию слева надо скопировать пряничка и повернуть его в 0*0*0 и расположить на сцене. </p>
+    <img  src="../img/second/22.png">
+    </div>
+    <a class="menu_les">Уроки</a>  
+    <a class="menu_les" href="vvod.html"> 0 </a>
+      <a class="menu_les" href="first.html"> 1</a>
+      <a class="menu_les" href="second.html"> 2</a>
+      <a class="menu_les" href="th.html"> 3</a>
+      <a class="menu_les" href="for.html"> 4</a>
+      <div class="button-container">
+        <a href="#"  class="button">Наверх</a>
+      
+      </div>
+     </div>
+     <footer>
+            <div class="container">
+              <div class="footer-col">
+                <div class="social-bar-wrap">
+                  <a title="vk" href="https://vk.com/nasya_fox" target="_blank"><i class="fa fa-vk"></i></a>
+                  <a title="insta" href="https://www.instagram.com/_kymih0_/?hl=ru" target="_blank"><i class="fa fa-instagram"></i></a>
+                  <a title="blogger" href="https://kym1ho.blogspot.com/" target="_blank"><i class="fa fa-google-plus"></i></a>
+               <p>&copy; Все права защищены</p>
+			   </div>
+              </div>
+            </div>
+          </footer>
+          <script>
+            $('.nav-toggle').on('click', function(){
+            $('#menu').toggleClass('active');
+            });
+            $(document).ready(function(e){
+           $('.drop-wrap').on('click',function(){
+          $('.sub').slideToggle();
+              });
+              })
+            </script>     
+          </body>
+          </html> 

@@ -1,0 +1,177 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kymiho</title>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic|Playfair+Display:400,700&subset=latin,cyrillic">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="../css/css.css">
+  <link rel="stylesheet" type="text/css" href="../css/button.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  </head>
+  
+<body>
+        <header>
+                <nav class="container">
+                  <a class="logo" >
+                    <span>3</span>
+                    <span>D's</span>
+                    <span>M</span>
+                    <span>A</span>
+                    <span>X</span>
+                    
+                  </a>
+                  <div class="nav-toggle"><span></span></div>
+         
+                  <ul id="menu">
+                    <li><a href="../index.html">Главная</a></li>
+                     <li class="drop-wrap"><a>Уроки</a></li>
+                    <ul class ="sub">
+                        <li><a href="vvod.html">Вводная часть</a></li>
+                        <li><a href="first.html">Урок 1</a></li>
+                        <li><a href="second.html">Урок 2</a></li>
+                        <li><a href="th.html">Урок 3</a></li>
+                        <li><a href="for.html">Урок 4</a></li>
+                         </ul>
+                    <li><a href="gal.html">Галерея</a></li>
+                    <li><a href="arh.html">Архив</a></li>
+                    <li><a href="svz.html">Связь</a></li>
+                  </ul>
+                </nav>
+              </header>
+    <div class="container">
+            <h2 class="post-title">Добавление референса</h2>
+            <a class="menu_les">Уроки</a>  
+            <a class="menu_les" href="vvod.html"> 0 </a>
+              <a class="menu_les" href="first.html"> 1</a>
+              <a class="menu_les" href="second.html"> 2</a>
+              <a class="menu_les" href="th.html"> 3</a>
+              <a class="menu_les" href="for.html"> 4</a> 
+           <div class="post-content">
+        </div>
+
+           
+            <div class="post-content">
+            <p> Необходимо перейти в вид <b>Top</b> и режим <b>Shaded (Defended Shanding)</b> – 
+                 для удобной работы с референсом.</p>
+            <p>На панеле <b>Create – Geometry – Plane (плоскость)</b>. 
+                Очень  важно чтобы создаваемый объект был в начале координат.</p>
+                <img class = "tip"  src="../img/first/1.png">
+                <img class = "tip2" src="../img/first/2.png">
+            <p>Создается  плоскость на панели (произвольного размера), 
+            затем  ставится количество сигментов 1 и 1, для фиксации объекта нажимается ПКМ.
+            </p>
+            <p>
+             С помощью клавиши <b>W</b> и на панеле Modify нужно изменить размеры нашего Plane под размеры референса  50 мм * 140 мм. 
+            </p>
+            </div>
+            <h2 >Перенос референса</h2>
+            <br>
+            <div class="post-content">
+            <p>Для этого можно использовать обычный Drag&Drop, но если он не работает.</p>
+                 <img src="../img/first/3.jpg">
+
+            </div>
+            <div class="post-content">
+            <p>Надо немного отпустить наш референс по оси z. Для этого надо выбрать объект и внизу окна, где находятся координаты,прописать <b>Z = -1</b></p>.
+            <p>Это надо чтобы модель была в центре координат, а не накладывалась на референс.</p>     
+        
+             </div>
+             <h2 >Создание печенья</h2>
+            <br>
+            <div class="post-content">
+            <img class ="tip" src="../img/first/4.png">
+            <p>Во вкладке <b>Create – Shapes – line.</b> </p>
+        <p><b>Corner</b> – Ломанная линия.</p> 
+        <p><b>Smooth</b> – сглаженная линия.</p>            
+        <p><b>Backspace</b> - отмена действий  при построении линии. </p>
+        <p> Надо выбрать тип <b>Smooth</b> (идет построение пряника – девочки). В конечном итоге линия должна замкнуться в той точке, в которой она начиналась. 
+           При нажатии на точку 3 D’s Max спросит "Закрыть линию?" - Да.</p>
+        <ul class="sp"><p>В Modify можем изменять линию в 3х уровнях.</p> 
+            <li>1 на клавиатуре  - <b>vertex</b> (самый точный инструмент редактирования);</li>
+            <li>2 на клавиатуре – <b>segment</b>;</li>
+            <li>3 на клавиатуре– <b>spline</b> (вся кривая);</li>
+        </ul>  
+        <p>Если выбрать точку (несколько точек) и нажать на нее ПКМ откроется меню, где есть типы точки.</p>
+        <p><b>Corner</b> - точка будет угловатой, а <b>Smooth</b> - скругленная.</p>
+        <p><b>Delete</b> - удаление точки.</p>
+        <p>Добавление точки происходит через <b>Refline</b>, затем надо кликнуть по линии
+        в то место, где необходима точка.</p>
+        
+        <h2>Теперь необходимо подогнать кривую под референс.</h2>
+        <br>
+        <img src="../img/first/7.png">
+        <br> <br>
+        <h2>Трехмерная фигура</h2>
+        <br>
+        <p>Проверяется выделена ли линия и чтобы не один из подобъектов (vertex. Segment. spline) не были активны.</p>
+        <p>Во вкладке Modify - модификатор <b>Extrude</b>  и  параметр <b>Amount = 3</b> (высота объекта).</p>
+        </div>
+        
+        <div class="post-content">
+            <h2>Отображние сети и ребер построения</h2> 
+            <br> 
+            <img src="../img/first/9.png">
+            <p>Ставятся галочки на против обоих пунктах (на картинке).</p>
+            <p>Выходит объект – один большой многоугольник с множеством точек. С такими объектами работать сложно, они могу отображаться некорректно. 
+            Чтобы исправить это  <b>Modifier list – Quadify Mesh</b> – генерация сетки. <b>Quad Size</b> – плотность сетки на единицу площади данной модели. 1% - лучше не ставить, так как плотность будет очень большой.</p>  
+        </div>
+        <div class="post-content">
+            <img src="../img/first/10.png">
+<p>Если при добавлении на объект печенья модификатор Quadify Mesh, но сетка не добавилась, необходимо сделать следующее:</p>
+     <p>Во вкладке Modify - Quadify Mesh и <b>Quad Size</b> на 2-3%.</p>  
+<p>Данный параметр означает насколько крупной будет сетка на вашем объекте, но при определенных значения он не добавляет сетку.</p>
+ <p>В итоге нужно подобрать оптимальное значение, которое будет устраивать и сетка будет создана.</p>  
+ <p><b>Важно!</b> Если вы проигнорировали то, что сетка не добавилась модификатором Quadify Mesh и применили к объекту модификатор <b>Turbosmooth</b>, то вы получите результат, как на третьем скриншоте.</p>
+ <img src="../img/first/11.png">
+ <p>Для сглаживания ребер пряника в <b>Modify – Turbosmooth</b> </p>
+ <p>Ставится количество Iterations = 1 (больше ставить не стоит, чтобы объект не весил очень много).</p>
+ 
+ <p>Если же грани остались жесткие то в <b>Line</b> и необходимо изменить количество шагов.</p>
+ <img src="../img/first/13.png">
+ <p>После применения модификатора Turbosmooth, стоит проверить объект на наличие артефактов (искажение, заломов).</p>
+ <p>Если были обнаружены подобные неровности на углах, их можно поправить.</p>
+<p>Для этого надо перейти на уровень <b>Line</b>, для редактирования линии, которая лежит в основе объекта и изменить типы точек в этом месте на <b>Smooth</b>.</p>
+<h2>По аналогии делается пряник-мальчик.</h2>
+<br>
+<img src="../img/first/14.png">
+</div>
+<a class="menu_les">Уроки</a>  
+<a class="menu_les" href="vvod.html"> 0 </a>
+  <a class="menu_les" href="first.html"> 1</a>
+  <a class="menu_les" href="second.html"> 2</a>
+  <a class="menu_les" href="th.html"> 3</a>
+  <a class="menu_les" href="for.html"> 4</a>
+  
+  <div class="button-container">
+    <a href="#"  class="button">Наверх</a>
+  
+  </div>
+    </div>
+
+   
+     <footer>
+            <div class="container">
+              <div class="footer-col">
+                <div class="social-bar-wrap">
+                  <a title="vk" href="https://vk.com/nasya_fox" target="_blank"><i class="fa fa-vk"></i></a>
+                  <a title="insta" href="https://www.instagram.com/_kymih0_/?hl=ru" target="_blank"><i class="fa fa-instagram"></i></a>
+                  <a title="blogger" href="https://kym1ho.blogspot.com/" target="_blank"><i class="fa fa-google-plus"></i></a>
+               <p>&copy; Все права защищены</p>
+			   </div>
+              </div>
+            </div>
+          </footer>
+          <script>
+            $('.nav-toggle').on('click', function(){
+            $('#menu').toggleClass('active');
+            });
+            $(document).ready(function(e){
+           $('.drop-wrap').on('click',function(){
+          $('.sub').slideToggle();
+              });
+              })
+            </script>     
+          </body>
+          </html> 
