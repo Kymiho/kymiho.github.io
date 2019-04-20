@@ -266,15 +266,7 @@ z-index: 3;
 }
 
 
-.sub {
-    position:absolute;
-    list-style:none;
-    text-align:left;
-    display:none;
-    background:white;
-    padding:0;
-    overflow:hidden;
-  }
+
 .posts-list, aside {
 width: 100%;
 float: none;
@@ -309,4 +301,5 @@ text-align: center;
 margin-bottom: 0;
 }
 }
+
 }
