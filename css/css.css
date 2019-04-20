@@ -65,6 +65,7 @@ h1, h2, h3, h4, h5, h6 {
 font-family: 'Playfair Display';
 font-weight: normal;
 letter-spacing: 1px;
+color: #ea8685;
 }
 body {
 font-family: 'Open Sans', arial, sans-serif;
@@ -238,6 +239,19 @@ padding: 0 7px;
 font-size: 18px;
 }
 
+@media (max-width: 1980px) {
+    
+ 
+    
+    .tip3{
+        width: 30%;
+    }
+    
+    .posts-list, aside {
+    width: 100%;
+    float: none;
+    }
+
 @media (max-width: 768px) {
 .nav-toggle {
     display: block;
@@ -265,7 +279,9 @@ z-index: 3;
     margin-right: 0;
 }
 
-
+.tip3{
+    width: 40%;
+}
 
 .posts-list, aside {
 width: 100%;
@@ -275,6 +291,25 @@ float: none;
 @media (max-width: 480px) {
 nav {
 text-align: center;
+}
+
+.tip{
+    width: 50%;
+}
+
+.tip2{
+    
+    width: 100%;
+    
+    }
+    .tip3{
+        width: 80%;
+    }
+.tip5{
+    width: 100%;
+}
+.tip4{
+    width: 100%;
 }
 
 .logo {
